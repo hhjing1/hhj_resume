@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>[简历]胡海靖-软件工程</title>
+    <link rel="shortcut icon" href="assets/images/帆船.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+            <!-- 左栏固定开关，记得及时删除这段代码 Start-->
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed(){
+                        var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                        document.getElementById('side').style.position = value;
+                    }
+                </script>
+                <input id="cb" type="checkbox">
+				<!--按钮开关-->
+               <!-- <span class="slider round"></span> -->
+            </label>
+            <style>
+                @media (min-width: 	750px){
+                    .switch{position:relative;display:inline-block!important;width:60px;height:34px;}
+                    .switch input{display:none;}
+                    .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s;}
+                    .slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:white;-webkit-transition:.4s;transition:.4s;}
+                    input:checked + .slider{background-color:#1abc9c;}
+                    input:focus + .slider{box-shadow:0 0 1px #1abc9c;}
+                    input:checked + .slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px);}.slider.round{border-radius:34px;}
+                    .slider.round:before{border-radius:50%;}
+                }
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+            <!-- 个人肖像 -->
+            <section class="me">
+               <!-- <section class="portrait"> -->
+                  <!--  <div class="loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </section> -->
+				<!-- 头像照片 -->
+				<img class="avatar" src="assets/images/head.png" style="width: 60%;height: 60%;border-radius: 100px;" onload="loading()">
+
+                <h1 class="name">胡海靖</h1>
+                <h4 class="info-job">胡海靖/女/00后</h4>
+
+            </section>
+ 			<!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>手机</label>
+                        <a href="tel:19930516192" target="_blank">19930516192</a>
+                    </li>
+                    <li>
+                        <label>邮箱</label>
+                        <a href="mailto:324730964@qq.com" target="_blank">3247306964@qq.com</a>
+                    </li>
+                    <li>
+                        <label>博客园地址</label>
+                        <a href="https://www.cnblogs.com/hhjing/" target="_blank">cnblogs.com/hhjing/</a>
+                    </li>
+                    <li>
+                        <label>Github</label>
+                        <a href="https://github.com/hhjing1" target="_blank">https://github.com/hhjing1</a>
+                    </li>
+                </ul>
+            </section>
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>自我认知</h2>
+                <hr/>
+					<ul>
+                      	<li>
+                      		<label>性格认知</label>	
+                      		<span>严谨细心，沉着冷静</span>
+                      	</li>
+                      	<li>
+                      		<label>职业测试</label>
+                      		<span>事业型、常规型</span>
+                      	</li>
+                      	<li>
+                      		<label>职业倾向</label>
+                      		<span>软件测试，数据库管理，数据分析</span>
+                      	</li>
+                    </ul>           
+              </section>
+
+
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>技能点</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>HTML</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>CSS</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>JavaScript</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>mybatis</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>spring</label>
+                        <progress value="65" max="100"></progress>
+                    </li>
+					<li>
+					    <label>spark</label>
+					    <progress value="60" max="100"></progress>
+					</li>	
+                </ul>
+            </section>
+
+            <section class="qrcode info-unit">
+                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>个人主页二维码</h2>
+                <hr/>
+                <img src="./assets/images/myself.png" style="width: 70%;margin-left: 42px;" alt="">
+            </section>
+
+        </section>
+
+        <section class="main">
+
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                <h2>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>石家庄铁道大学 - 软件工程（本科）</span>
+                            <time>2018.09-2022.06</time>
+                        </h3>
+                        <p>
+                            <mark>荣誉</mark>沟通能力强，保持动力，保持创新。参加多项比赛，获得"中博杯辩论赛"最佳辩手，"东软杯"三等奖等。</p>
+                    </li>
+                </ul>
+            </section>
+
+           
+            <!-- 项目经验 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>个人项目</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[项目1]爬虫疫情数据，进行可视化</span>
+                            <span class="link">
+                                                                                         博客地址：
+                                <a href="https://www.cnblogs.com/hhjing/p/12419720.html" target="_blank">初始阶段（折线图）</a>
+                                <a href="https://www.cnblogs.com/hhjing/p/12436966.html" target="_blank">中级阶段（省份地图）</a>
+                                <a href="https://www.cnblogs.com/hhjing/p/12654224.html" target="_blank">完善阶段（世界地图）</a> 
+                            </span>
+                            <time></time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：python爬虫+柱形图展示+echarts</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                             	   [目标]实现疫情数据的爬取、将数据通过折线图和地图的形式显示
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                                                                         [附加]运用android,简单的实现了app查询功能
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [app博客网址]<a href="https://www.cnblogs.com/hhjing/p/12527094.html" target="_blank">全球疫情数据统计</a>
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                <mark>“调研-设计-实现-文档”</mark>具有初步设想、构思、爬虫、展示、具体编码实现
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                              	  [效果]作品成功运行并上传到了github和发布相关的介绍博客</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目2]河北省重大技术需求征集系统</span>
+                            <time></time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>阶段1-10博客进度</li>
+                            <i class="fa fa-bars" aria-hidden="true"></i>                          
+                                [01]<a href="https://www.cnblogs.com/hhjing/p/13843800.html">注册登录/需求征集</a>                                 
+                                [02]<a href="https://www.cnblogs.com/hhjing/p/13849309.html">用户信息/需求上传</a>                                 
+                                [03]<a href="https://www.cnblogs.com/hhjing/p/13875678.html">管理员界面设计/形式审核</a>
+                                [04]<a href="https://www.cnblogs.com/hhjing/p/14170382.html">网络审核</a>                           
+                                [05]<a href="https://www.cnblogs.com/hhjing/p/14170435.html">综合多条件查询</a>                
+                                [06]<a href="https://www.cnblogs.com/hhjing/p/14170463.html">需求浏览</a>
+                                <br/>
+                            <li>
+                            	 [贡献]分析项目需求，制定设计方案、编码实现具体功能。
+                            </li>
+                        </ul>
+                    </li>
+                 <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>团队项目</h2>
+                <hr/>
+                    <li>
+                        <h3>
+                            <span>[项目1]“keep running” 运动app</span>
+		<span class="link">
+                                                                                         团队博客地址：
+                                <a href="https://www.cnblogs.com/yumazemadui/" target="_blank">开发记录</a>
+                            </span>
+                            <time>2020.04-2020.06</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：HTML5+android+ECharts+MySQL+高德地图</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                              	  [目标]实时记录用户的跑步打卡、日历记录、运动轨迹、统计运动步数、展示运动情况、听本地音乐、推荐运动饮食。
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                               	 [团队]3位成员
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                               	 [贡献]分析项目需求、用户调研制、定软件开发计划、使用Android制作app用到了
+                                <mark>ECharts</mark> 进行日历打卡，实现本地音乐播放，实现多功能一体化。
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                               	 [效果]作品已经上传到github中，参加东软杯获得三等奖。
+                            </li>
+                        </ul>
+                    </li>
+					<li>
+					    <h3>
+					        <span>[项目2]新闻文本分析</span>
+					        <span class="link">
+					        	博客地址
+					            <a href="https://www.cnblogs.com/hhjing/p/14894623.html" target="_blank">爬取新闻</a>
+					            <a href="https://www.cnblogs.com/hhjing/p/14921418.html" target="_blank">关键词提取</a>
+					            <a href="https://www.cnblogs.com/hhjing/p/14921506.html" target="_blank">词云可视化</a>
+					        </span>
+					        <time>2021.03-2021.06</time>
+					    </h3>
+					    <ul class="info-content">
+					        <li>技术栈：HTML5+python+jieba+ECharts+MySQL</li>
+					        <li>
+					            <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+					            [目标]实现新闻热点爬取，对新闻进行分类，提取关键字，根据关键词形成矩阵可视化和词云可视化，也可根据关键词进行新闻搜索。
+					            <br/>
+					            <i class="fa fa-users" aria-hidden="true"></i>
+					            [团队]3位成员
+					            <br/>
+					            <i class="fa fa-bars" aria-hidden="true"></i>
+					            [贡献]分析项目需求、用户调研制、定软件开发计划、使用python用到flask框架制作web项目。用到了
+					            <mark>ECharts</mark> 进行图形化展示以及实现简易自动分析功能，训练数据集，并使用jieba分词实现新闻分类，使用Echarts实现词云可视化。
+					            <br/>
+					        </li>
+					    </ul>
+					</li>
+                </ul>
+            </section>
+
+            <!-- 自我评价 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>个人期盼</h2>
+                <hr/>
+                <p>
+					<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+					心若有明灯，深思般若行。</br>
+				<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                    <span class="mark-txt">保持冷静，保持创新。</span>
+					</br>
+					<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+					在IT行业始终不能停留自己的脚步，与时代同行才可不迷失自我。</br>		
+					</p>
+            </section>
+        </section>
+    </article>
+
+
+
+    <footer class="footer">
+        <p>
+            <time>2021年06月23日</time>.</p>
+    </footer>
+
+    <!-- 侧栏 --
+	<!-- 应该没啥用的啊 -->
+   <aside>
+        <ul>
+            <li>
+                <a href="https://www.cnblogs.com/hhjing/" target="_blank">博客园主页</a>
+            </li>
+        </ul>
+    </aside>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
